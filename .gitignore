@@ -1,0 +1,16 @@
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build outputs
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio cache and tracking folders
+.vs/
+
+# OS generated files
+Thumbs.db
+.DS_Store

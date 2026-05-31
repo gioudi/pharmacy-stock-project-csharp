@@ -1,17 +1,22 @@
+using PharmacyStockApp.Presenters;
+using PharmacyStockApp.Views;
+
 namespace PharmacyStockApp
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
+
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+
+            MainForm mainView = new MainForm();
+
+            MainFormPresenter presenter = new MainFormPresenter(mainView);
+
+            Application.Run(mainView);
         }
     }
 }

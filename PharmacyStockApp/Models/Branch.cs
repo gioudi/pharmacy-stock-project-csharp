@@ -7,7 +7,7 @@ namespace PharmacyStockApp.Models
     public enum Branch
     {
         Primaria, 
-        Secuandaria
+        Secundaria
     }
     public static class BranchExtensions
     {
@@ -16,7 +16,7 @@ namespace PharmacyStockApp.Models
             return branch switch
             {
                 Branch.Primaria => "Calle de la Rosa n.28",
-                Branch.Secuandaria => "Calle Alcazabilla n. 3",
+                Branch.Secundaria => "Calle Alcazabilla n. 3",
                 _ => "Dirección no encontraron"
             };
         }
